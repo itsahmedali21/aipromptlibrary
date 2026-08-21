@@ -3,7 +3,6 @@ import "@fontsource-variable/fraunces/wght.css";
 import "@fontsource-variable/fraunces/wght-italic.css";
 import "@fontsource-variable/inter/wght.css";
 import "./globals.css";
-import { ThemeProvider } from "@/context/theme-provider";
 import { ToastProvider } from "@/context/toast-context";
 import { SavedPromptsProvider } from "@/context/saved-prompts-context";
 import { Navbar } from "@/components/layout/navbar";
@@ -52,24 +51,22 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className="dark" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <body className="bg-bg text-text-primary antialiased">
-        <ThemeProvider>
-          <ToastProvider>
-            <SavedPromptsProvider>
-              <CursorGlow />
-              <a
-                href="#main-content"
-                className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[200] focus:rounded-full focus:bg-accent focus:px-5 focus:py-2.5 focus:text-sm focus:font-medium focus:text-accent-text-on"
-              >
-                Skip to content
-              </a>
-              <Navbar />
-              <main id="main-content">{children}</main>
-              <Footer />
-            </SavedPromptsProvider>
-          </ToastProvider>
-        </ThemeProvider>
+        <ToastProvider>
+          <SavedPromptsProvider>
+            <CursorGlow />
+            <a
+              href="#main-content"
+              className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[200] focus:rounded-full focus:bg-accent focus:px-5 focus:py-2.5 focus:text-sm focus:font-medium focus:text-accent-text-on"
+            >
+              Skip to content
+            </a>
+            <Navbar />
+            <main id="main-content">{children}</main>
+            <Footer />
+          </SavedPromptsProvider>
+        </ToastProvider>
       </body>
     </html>
   );

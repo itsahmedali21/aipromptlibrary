@@ -6,7 +6,6 @@ import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, Search as SearchIcon, X } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { ThemeToggle } from "@/components/ui/theme-toggle";
 import { LinkButton } from "@/components/ui/button";
 import { SearchOverlay } from "@/components/ui/search-overlay";
 import { LogoMark } from "@/components/ui/logo";
@@ -105,7 +104,6 @@ export function Navbar() {
               <SearchIcon className="h-4 w-4" strokeWidth={2} />
               <span className="hidden text-xs text-text-tertiary sm:inline">⌘K</span>
             </button>
-            <ThemeToggle className="hidden sm:inline-flex" />
             <LinkButton href="/prompts" size="sm" className="hidden sm:inline-flex" magnetic>
               Explore Prompts
             </LinkButton>
@@ -164,7 +162,6 @@ export function Navbar() {
                 </motion.div>
               ))}
               <div className="mt-6 flex items-center gap-3">
-                <ThemeToggle />
                 <LinkButton href="/prompts" size="md" className="flex-1 justify-center">
                   Explore Prompts
                 </LinkButton>

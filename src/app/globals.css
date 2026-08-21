@@ -24,47 +24,10 @@
   /* ---- Accent: Champagne Gold ---- */
   --accent-h: 38;
   --accent-s: 46%;
-}
 
-/* ==================== DARK THEME (default) ==================== */
-:root,
-.dark {
-  --bg: #08080a;
-  --bg-elevated: #0c0c0e;
-  --surface: #111113;
-  --surface-2: #17171a;
-  --surface-hover: #1c1c1f;
-
-  --border: rgba(255, 255, 255, 0.08);
-  --border-strong: rgba(255, 255, 255, 0.16);
-  --border-accent: rgba(212, 175, 106, 0.35);
-
-  --text-primary: #f6f5f2;
-  --text-secondary: #9d9c96;
-  --text-tertiary: #6c6b66;
-  --text-inverse: #0a0a0a;
-
-  --accent: #d4af6a;
-  --accent-soft: rgba(212, 175, 106, 0.12);
-  --accent-strong: #e8cd98;
-  --accent-dim: #a8834a;
-  --accent-text-on: #0a0906;
-
-  --glow: rgba(212, 175, 106, 0.16);
-  --shadow-color: 0deg 0% 0%;
-  --shadow-elevated: 0 20px 60px -20px rgba(0, 0, 0, 0.6), 0 4px 16px -4px rgba(0, 0, 0, 0.4);
-  --shadow-soft: 0 8px 30px -12px rgba(0, 0, 0, 0.5);
-  --noise-opacity: 0.035;
-
-  --scrollbar-track: #111113;
-  --scrollbar-thumb: #2a2a2d;
-
-  color-scheme: dark;
-}
-
-/* ==================== LIGHT THEME ==================== */
-/* Not an inversion — a distinct, warm editorial palette. */
-.light {
+  /* ==================== LIGHT THEME (only theme) ====================
+     A distinct, warm editorial palette. Dark mode has been removed —
+     this is the single, permanent look of the product. */
   --bg: #faf8f4;
   --bg-elevated: #ffffff;
   --surface: #ffffff;
