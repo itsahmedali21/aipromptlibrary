@@ -8,6 +8,7 @@ const baseCategories: Omit<Category, "promptCount">[] = [
     name: "Writing",
     description: "Long-form, editorial, and narrative prompts for polished prose.",
     icon: "PenLine",
+    accentColor: "#B5651D",
   },
   {
     id: "cat-marketing",
@@ -15,6 +16,7 @@ const baseCategories: Omit<Category, "promptCount">[] = [
     name: "Marketing",
     description: "Campaigns, positioning, and copy that moves an audience.",
     icon: "Megaphone",
+    accentColor: "#B23A48",
   },
   {
     id: "cat-design",
@@ -22,6 +24,7 @@ const baseCategories: Omit<Category, "promptCount">[] = [
     name: "Design",
     description: "Concepting, moodboards, and creative direction prompts.",
     icon: "Palette",
+    accentColor: "#7B4B94",
   },
   {
     id: "cat-coding",
@@ -29,6 +32,7 @@ const baseCategories: Omit<Category, "promptCount">[] = [
     name: "Coding",
     description: "Architecture, refactors, reviews, and developer workflows.",
     icon: "Code2",
+    accentColor: "#3A6EA5",
   },
   {
     id: "cat-seo",
@@ -36,6 +40,7 @@ const baseCategories: Omit<Category, "promptCount">[] = [
     name: "SEO",
     description: "Technical audits, keyword strategy, and search-ready content.",
     icon: "Search",
+    accentColor: "#3F7D58",
   },
   {
     id: "cat-business",
@@ -43,6 +48,7 @@ const baseCategories: Omit<Category, "promptCount">[] = [
     name: "Business",
     description: "Strategy, operations, and decision-support frameworks.",
     icon: "Briefcase",
+    accentColor: "#8A6D3B",
   },
   {
     id: "cat-education",
@@ -50,6 +56,7 @@ const baseCategories: Omit<Category, "promptCount">[] = [
     name: "Education",
     description: "Curriculum design, tutoring, and explanation prompts.",
     icon: "GraduationCap",
+    accentColor: "#4A5899",
   },
   {
     id: "cat-productivity",
@@ -57,6 +64,7 @@ const baseCategories: Omit<Category, "promptCount">[] = [
     name: "Productivity",
     description: "Systems, planning rituals, and personal operating models.",
     icon: "Zap",
+    accentColor: "#C08A2E",
   },
   {
     id: "cat-research",
@@ -64,6 +72,7 @@ const baseCategories: Omit<Category, "promptCount">[] = [
     name: "Research",
     description: "Synthesis, literature review, and analytical deep dives.",
     icon: "FlaskConical",
+    accentColor: "#2E8C82",
   },
   {
     id: "cat-social-media",
@@ -71,6 +80,7 @@ const baseCategories: Omit<Category, "promptCount">[] = [
     name: "Social Media",
     description: "Hooks, calendars, and platform-native content prompts.",
     icon: "Share2",
+    accentColor: "#C2477A",
   },
 ];
 

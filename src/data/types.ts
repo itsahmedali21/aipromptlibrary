@@ -63,6 +63,7 @@ export interface Category {
   name: string;
   description: string;
   icon: string; // lucide-react icon name
+  accentColor: string; // hex color used for this category's icon tint and accent
   promptCount: number;
 }
 
