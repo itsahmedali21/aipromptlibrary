@@ -2,8 +2,7 @@ import type { MetadataRoute } from "next";
 import { prompts } from "@/data/prompts";
 import { categories } from "@/data/categories";
 import { collections } from "@/data/collections";
-
-const siteUrl = "https://promptfolio.example.com";
+import { siteUrl } from "@/lib/site-config";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [

@@ -9,8 +9,7 @@ import { SavedPromptsProvider } from "@/context/saved-prompts-context";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { CursorGlow } from "@/components/ui/cursor-glow";
-
-const siteUrl = "https://promptfolio.example.com";
+import { siteUrl } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

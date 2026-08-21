@@ -1,6 +1,5 @@
 import type { MetadataRoute } from "next";
-
-const siteUrl = "https://promptfolio.example.com";
+import { siteUrl } from "@/lib/site-config";
 
 export default function robots(): MetadataRoute.Robots {
   return {
