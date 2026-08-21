@@ -9,6 +9,7 @@ import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { CursorGlow } from "@/components/ui/cursor-glow";
 import { siteUrl } from "@/lib/site-config";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -70,6 +71,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <Footer />
           </SavedPromptsProvider>
         </ToastProvider>
+        <SpeedInsights />
       </body>
     </html>
   );
